@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NodeBlocks /> match the snapshot 1`] = `
+<div class="node-block">
+  <h2>001</h2>
+  <div class="block-content">
+    Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+  </div>
+</div>
+`;
