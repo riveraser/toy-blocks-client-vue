@@ -61,4 +61,30 @@ export const mutations = {
       ]
     }
   },
+  setNodeBlockValues(state, { url, data}) {
+    let list = state.blocks.list;
+    
+    const index = state.blocks.list.findIndex(t => t.url === url);
+    if (index >= 0) {
+      list = [
+        ...state.blocks.list.slice(0, index),
+        {
+          ...state.blocks.list[index],
+          data
+        },
+        ...state.blocks.list.slice(index + 1)
+      ];
+    } else {
+      list.push ({
+        url,
+        data
+      })
+    }
+    
+    state.blocks = {
+      list: [
+        ...list,
+      ]
+    }
+  },
 }
