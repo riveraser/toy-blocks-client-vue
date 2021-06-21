@@ -111,7 +111,6 @@ describe("Store Actions", () => {
 
     const url = block.nodes.list[0].url;
     await actions.getNodeBlock({ commit }, url);
-    console.log("block.nodes.list[0].data", block.nodes.list[0].data);
     expect(commit).toHaveBeenCalledTimes(1);
     expect(commit).toHaveBeenCalledWith("setNodeBlockValues", {
       url,

@@ -10,15 +10,7 @@ describe('<NodeBlocks />', () => {
     id:"1",
     content:"Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit."
   };
-
-   //mocks fetch API
   
-  //  global.fetch = jest.fn(() =>
-  //   Promise.resolve({
-  //     json: () => Promise.resolve({ url: 'https://thawing-springs-53971.herokuapp.com' }, data: [{},{}]  }),
-  //   })
-  // );
-
   const render = (props = {}) => shallowMount(NodeBlocks, {
     propsData: {
       ...defaultProps,
